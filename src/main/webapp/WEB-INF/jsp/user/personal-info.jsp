@@ -1,6 +1,7 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<c:set var="path" value="${pageContext.request.contextPath}"></c:set>
+<c:set var="path" value="${pageContext.request.contextPath}"/>
 <!DOCTYPE html>
 <html>
 <head>
@@ -45,7 +46,7 @@
             <!-- avatar column -->
             <div class="span3 avatar-box">
                 <div class="personal-image">
-                    <img src="/static/images/user/${user.pic}" alt="" class="avatar img-circle" id="user_pic_modal_btn"/>
+                    <img src="${path}/static/images/user/${user.pic}" alt="" class="avatar img-circle" id="user_pic_modal_btn"/>
                     <form id="update_file" style="display: none" enctype="multipart/form-data">
                         <input type="file" name="file" id="myFile"/>
                     </form>

@@ -1,6 +1,8 @@
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<c:set var="path" value="${pageContext.request.contextPath}"></c:set>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<c:set var="path" value="${pageContext.request.contextPath}"/>
 <!DOCTYPE html>
 <html>
 <head>
@@ -58,7 +60,7 @@
             <!-- 消息通知 end -->
             <!-- 用户信息和系统设置 start -->
             <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="/admin/developing">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="<c:url value="/admin/developing"/>">
                     <i class="fa fa-user fa-fw"></i>
                     <i class="fa fa-caret-down"></i>
                 </a>
@@ -66,10 +68,10 @@
                     <li>
                         <input type="hidden" id = "currentAdminId" value="${admin.id}">
                     </li>
-                    <li><a href="/admin/developing"><i class="fa fa-user fa-fw"></i>
+                    <li><a href="<c:url value="/admin/developing"/>"><i class="fa fa-user fa-fw"></i>
                         管理员：${admin.adminName}</a>
                     </li>
-                    <li><a href="/admin/developing"><i class="fa fa-gear fa-fw"></i> 系统设置</a></li>
+                    <li><a href="<c:url value="/admin/developing"/>"><i class="fa fa-gear fa-fw"></i> 系统设置</a></li>
                     <li class="divider"></li>
                     <li>
                         <a href="${path}/admin/logout">
@@ -377,7 +379,7 @@
             </div>
             <div class="modal-body">
                 <p>请先
-                    <a href="/admin/login">登录</a>！</p>
+                    <a href="<c:url value="/admin/login"/>">登录</a>！</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal" aria-label="Close">关闭</button>
@@ -442,7 +444,7 @@
             var petTypeTd = $("<td></td>").append(pet.petType);
             var sexTd = $("<td></td>").append(pet.sex);
             var birthdayTd = $("<td></td>").append(pet.birthday);
-            var picTd = $("<td></td>").append($("<img/>").addClass("mySize").attr("src", "/static/images/animal/" + spilt(pet.pic)));
+            var picTd = $("<td></td>").append($("<img/>").addClass("mySize").attr("src", "${path}/static/images/animal/" + spilt(pet.pic)));
             var stateTd = null;
             if (pet.state == 0) {
                 stateTd = $("<td></td>").append("还未被申请购买");
