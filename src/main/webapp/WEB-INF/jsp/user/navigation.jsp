@@ -31,12 +31,6 @@
                     <li>
                         <a href="${path}/user/service">购买中心</a>
                     </li>
-                    <li>
-                        <a href="${path}/user/teamBlog">团队博客</a>
-                    </li>
-                    <li>
-                        <a href="${path}/user/team">团队展示</a>
-                    </li>
 
                     <!-- 判断是否登录 显示哪个内容 -->
                     <%

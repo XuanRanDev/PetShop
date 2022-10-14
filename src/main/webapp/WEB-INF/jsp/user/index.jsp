@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <c:set var="path" value="${pageContext.request.contextPath}"></c:set>
@@ -27,163 +28,163 @@
     <link href="http://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
 </head>
-<body>
-<jsp:include page="navigation.jsp"></jsp:include>
-<!-- //sticky navigation 首页轮播图 -->
-<div class="w3l-main" id="home1">
-    <div class="container">
-        <!-- header -->
-        <div class="header">
-            <div class="logo">
-                <h1>
-                    <a href="#">
-                        <img class="logo-img center-block" src="/static/images/home/logo.png" height="130px" width="130px" alt="" /> 猫狗生活
-                    </a>
-                </h1>
+    <body>
+        <jsp:include page="navigation.jsp"></jsp:include>
+        <!-- //sticky navigation 首页轮播图 -->
+        <div class="w3l-main" id="home1">
+            <div class="container">
+                <!-- header -->
+                <div class="header">
+                    <div class="logo">
+                        <h1>
+                            <img class="logo-img center-block" src="<c:url value="/static/images/home/logo.png"/>"
+                                 height="130px" width="130px" alt=""/> 猫狗生活
+                            </a>
+                        </h1>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- //header -->
             </div>
-            <div class="clearfix"> </div>
-        </div>
-        <!-- //header -->
-    </div>
-    <!-- Slider -->
-    <div class="slider">
-        <div class="callbacks_container">
-            <ul class="rslides" id="slider">
-                <li>
-                    <div class="slider-img-w3layouts one">
-                        <div class="w3l-overlay">
-                            <div class="container">
-                                <div class="banner-text-info">
-                                    <h3>我们随时
-                                        <span>欢迎</span> 你们来
-                                        <span>咨询</span>！
-                                    </h3>
-                                    <p> 全面的猫狗护理指南，让您的宠物感受到您的爱</p>
+            <!-- Slider -->
+            <div class="slider">
+                <div class="callbacks_container">
+                    <ul class="rslides" id="slider">
+                        <li>
+                            <div class="slider-img-w3layouts one">
+                                <div class="w3l-overlay">
+                                    <div class="container">
+                                        <div class="banner-text-info">
+                                            <h3>我们随时
+                                                <span>欢迎</span> 你们来
+                                                <span>咨询</span>！
+                                            </h3>
+                                            <p> 全面的猫狗护理指南，让您的宠物感受到您的爱</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="slider-img-w3layouts two">
-                        <div class="w3l-overlay">
-                            <div class="container">
-                                <div class="banner-text-info">
-                                    <h3>你可以展示你的
-                                        <span>爱</span> 向你
-                                        <span>的宠物</span>!</h3>
-                                    <p> 全面的猫狗护理指南，让您的宠物感受到您的爱</p>
+                        </li>
+                        <li>
+                            <div class="slider-img-w3layouts two">
+                                <div class="w3l-overlay">
+                                    <div class="container">
+                                        <div class="banner-text-info">
+                                            <h3>你可以展示你的
+                                                <span>爱</span> 向你
+                                                <span>的宠物</span>!</h3>
+                                            <p> 全面的猫狗护理指南，让您的宠物感受到您的爱</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="slider-img-w3layouts three">
-                        <div class="w3l-overlay">
-                            <div class="container">
-                                <div class="banner-text-info">
-                                    <h3>猫狗 是你的
-                                        <span>朋友</span>！&nbsp;&nbsp;猫狗是你的
-                                        <span>家人</span> !</h3>
-                                    <p> 全面的猫狗护理指南，让您的宠物感受到您的爱</p>
+                        </li>
+                        <li>
+                            <div class="slider-img-w3layouts three">
+                                <div class="w3l-overlay">
+                                    <div class="container">
+                                        <div class="banner-text-info">
+                                            <h3>猫狗 是你的
+                                                <span>朋友</span>！&nbsp;&nbsp;猫狗是你的
+                                                <span>家人</span> !</h3>
+                                            <p> 全面的猫狗护理指南，让您的宠物感受到您的爱</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="slider-img-w3layouts four">
-                        <div class="w3l-overlay">
-                            <div class="container">
-                                <div class="banner-text-info">
-                                    <h3>猫狗如此
-                                        <span>可爱</span> 你们怎么可能
-                                        <span>不爱</span>它们!</h3>
-                                    <p>全面的猫狗护理指南，让您的宠物感受到您的爱</p>
+                        </li>
+                        <li>
+                            <div class="slider-img-w3layouts four">
+                                <div class="w3l-overlay">
+                                    <div class="container">
+                                        <div class="banner-text-info">
+                                            <h3>猫狗如此
+                                                <span>可爱</span> 你们怎么可能
+                                                <span>不爱</span>它们!</h3>
+                                            <p>全面的猫狗护理指南，让您的宠物感受到您的爱</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="clearfix"></div>
-    </div>
-    <!--//Slider-->
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <!--//Slider-->
 </div>
 <!--//banner-->
 
 
-    <!-- footer -->
-    <section class="footer-w3">
-        <div class="container">
-            <div class="col-lg-4 col-md-4 col-sm-4 footer-agile1" data-aos="zoom-in">
-                <h3>网站简介</h3>
-                <p class="footer-p1">
-                    该网站是用于想购买宠物和想成为我们其中一员，那么你将再这里实现你的想法。
-                    如果你是购买者，请认真选取想要购买的宠物购买后，请认真负责对待可爱的猫狗！
-                    如果你是想成为志愿者，请联系我们，我们欢迎任何爱心认识，加入我们！
-                </p>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 footer-mid-w3" data-aos="zoom-in">
-                <h3>宠物展示</h3>
-                <div class="agileinfo_footer_grid1">
-                    <a href="#">
-                        <img src="/static/images/home/f1.jpg" alt=" " class="img-responsive">
-                    </a>
+        <!-- footer -->
+        <section class="footer-w3">
+            <div class="container">
+                <div class="col-lg-4 col-md-4 col-sm-4 footer-agile1" data-aos="zoom-in">
+                    <h3>网站简介</h3>
+                    <p class="footer-p1">
+                        该网站是用于想购买宠物和想成为我们其中一员，那么你将再这里实现你的想法。
+                        如果你是购买者，请认真选取想要购买的宠物购买后，请认真负责对待可爱的猫狗！
+                        如果你是想成为志愿者，请联系我们，我们欢迎任何爱心认识，加入我们！
+                    </p>
                 </div>
-            <div class="agileinfo_footer_grid1">
-                <a href="#">
-                    <img src="/static/images/home/f2.jpg" alt=" " class="img-responsive">
-                </a>
-            </div>
-            <div class="agileinfo_footer_grid1">
-                <a href="#">
-                    <img src="/static/images/home/f3.jpg" alt=" " class="img-responsive">
-                </a>
-            </div>
-            <div class="agileinfo_footer_grid1">
-                <a href="#">
-                    <img src="/static/images/home/f4.jpg" alt=" " class="img-responsive">
-                </a>
-            </div>
-            <div class="agileinfo_footer_grid1">
-                <a href="#">
-                    <img src="/static/images/home/f5.jpg" alt=" " class="img-responsive">
-                </a>
-            </div>
-            <div class="agileinfo_footer_grid1">
-                <a href="#">
-                    <img src="/static/images/home/f6.jpg" alt=" " class="img-responsive">
-                </a>
-            </div>
-            <div class="clearfix"> </div>
-        </div>
-        <!--联系方式-->
-        <div class="col-lg-4 col-md-4 col-sm-4 footer-agile1" data-aos="zoom-in">
-            <h3>联系方式</h3>
-            <p>电话&nbsp;&nbsp;<span style="font-size: 22px;color: red">14390872021</span></p>
-            <br>
-            <p>邮件&nbsp;&nbsp;<span style="font-size: 22px;color: red">CatDog@aliyun.com</span></p>
-            <br>
-            <p>官网&nbsp;&nbsp;<span style="font-size: 22px;color: red">www.pet.com</span></p>
-            <br>
-            <p><a href="${path}/admin/login">管理员登录</a></p>
-        </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 footer-mid-w3" data-aos="zoom-in">
+                    <h3>宠物展示</h3>
+                    <div class="agileinfo_footer_grid1">
+                        <a href="#">
+                            <img src="<c:url value="/static/images/home/f1.jpg"/>" alt=" " class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="agileinfo_footer_grid1">
+                        <a href="#">
+                            <img src="<c:url value="/static/images/home/f2.jpg"/>" alt=" " class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="agileinfo_footer_grid1">
+                        <a href="#">
+                            <img src="<c:url value="/static/images/home/f3.jpg"/>" alt=" " class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="agileinfo_footer_grid1">
+                        <a href="#">
+                            <img src="<c:url value="/static/images/home/f4.jpg"/>" alt=" " class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="agileinfo_footer_grid1">
+                        <a href="#">
+                            <img src="<c:url value="/static/images/home/f5.jpg"/>" alt=" " class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="agileinfo_footer_grid1">
+                        <a href="#">
+                            <img src="<c:url value="/static/images/home/f6.jpg"/>" alt=" " class="img-responsive">
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <!--联系方式-->
+                <div class="col-lg-4 col-md-4 col-sm-4 footer-agile1" data-aos="zoom-in">
+                    <h3>联系方式</h3>
+                    <p>电话&nbsp;&nbsp;<span style="font-size: 22px;color: red">14390872021</span></p>
+                    <br>
+                    <p>邮件&nbsp;&nbsp;<span style="font-size: 22px;color: red">CatDog@aliyun.com</span></p>
+                    <br>
+                    <p>官网&nbsp;&nbsp;<span style="font-size: 22px;color: red">www.pet.com</span></p>
+                    <br>
+                    <p><a href="${path}/admin/login">管理员登录</a></p>
+                </div>
 
-    </div>
+            </div>
 
-</section>
+        </section>
 
 
-<!-- js 非得用2.0版本得jQuery-->
+        <!-- js 非得用2.0版本得jQuery-->
 <script src="${path}/static/js/user/jquery-2.2.3.min.js"></script>
 <script src="${path}/static/bootstrap/js/bootstrap.min.js"></script>
 <!-- Necessary-JavaScript-File-For-Bootstrap -->
 <!-- //js -->
 
-<!-- Banner Slider -->
+        <!-- Banner Slider -->
 <script src="${path}/static/js/user/responsiveslides.min.js"></script>
 <script>
     $(function () {
@@ -205,5 +206,5 @@
 </script>
 <!-- //Banner Slider -->
 
-</body>
+    </body>
 </html>

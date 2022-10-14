@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <c:set var="path" value="${pageContext.request.contextPath}"></c:set>
@@ -40,27 +41,27 @@
         </div>
 
         <div class="w3l-img-side">
-            <img src="/static/images/animal/cat.jpg" alt=""/>
+            <img src="<c:url value="/static/images/animal/cat.jpg"/>" alt=""/>
         </div>
         <div class="w3l-img-side w3l-img-side2">
-            <img src="/static/images/animal/dog.jpg" alt=""/>
+            <img src="<c:url value="/static/images/animal/dog.jpg"/>" alt=""/>
+        </div>
     </div>
-</div>
-<div class="row">
-    <!-- 分页条信息 -->
-    <div class="col-md-5" id="page_info_area"></div>
-    <div class="col-md-4 myPage" id="page_nav_area"></div>
-</div>
+    <div class="row">
+        <!-- 分页条信息 -->
+        <div class="col-md-5" id="page_info_area"></div>
+        <div class="col-md-4 myPage" id="page_nav_area"></div>
+    </div>
 
 
-<!-- //services -->
+    <!-- //services -->
 <!-- js -->
 <script src="${path}/static/js/jquery-3.4.1.js"></script>
 <script src="${path}/static/bootstrap/js/bootstrap.js"></script>
 <!-- Necessary-JavaScript-File-For-Bootstrap -->
 <!-- //js -->
 
-<!-- start-smooth-scrolling 上去-->
+    <!-- start-smooth-scrolling 上去-->
 <script src="${path}/static/js/user/move-top.js"></script>
 <script src="${path}/static/js/user/easing.js"></script>
 <script>
@@ -76,7 +77,7 @@
 </script>
 <!-- //end-smooth-scrolling -->
 
-<!-- smooth-scrolling-of-move-up 这是service.html页面反到底层上去的功能 -->
+    <!-- smooth-scrolling-of-move-up 这是service.html页面反到底层上去的功能 -->
 <script>
     $(document).ready(function () {
         $().UItoTop({
@@ -94,6 +95,7 @@
     $(function(){
         to_page(1);
     });
+
     function to_page(pn){
         $.ajax({
             url:"${path}/pet/pets",
