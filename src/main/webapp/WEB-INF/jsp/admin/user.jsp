@@ -93,16 +93,7 @@
                                 <i class="fa fa-sitemap fa-fw"></i> 评论管理
                             </a>
                         </li>
-                        <li class="list-group-item my_font">
-                            <a href="${path}/admin/blog">
-                                <i class="fa fa-sitemap fa-fw"></i> 团队活动管理
-                            </a>
-                        </li>
-                        <li class="list-group-item my_font">
-                            <a href="${path}/admin/apply">
-                                <i class="fa fa-sitemap fa-fw"></i> 志愿者的申请
-                            </a>
-                        </li>
+
                         <li class="list-group-item my_font">
                             <a href="${path}/admin/agree">
                                 <i class="fa fa-sitemap fa-fw"></i> 同意购买列表
