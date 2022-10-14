@@ -12,7 +12,7 @@
 <html>
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="Content-Type" content="multipart/form-data; charset=utf-8" />
-    <title>宠物领养管理后台</title>
+    <title>宠物购买管理后台</title>
     <!-- 引入css样式文件 -->
     <!-- Bootstrap Core CSS -->
     <link href="${path}/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -92,7 +92,7 @@
                         </li>
                         <li class="list-group-item my_font">
                             <a href="${path}/admin/adopt">
-                                <i class="fa fa-sitemap fa-fw"></i> 领养管理
+                                <i class="fa fa-sitemap fa-fw"></i> 购买管理
                             </a>
                         </li>
                         <li class="list-group-item my_font">
@@ -112,12 +112,12 @@
                         </li>
                         <li class="list-group-item my_font">
                             <a href="${path}/admin/agree">
-                                <i class="fa fa-sitemap fa-fw"></i> 同意领养列表
+                                <i class="fa fa-sitemap fa-fw"></i> 同意购买列表
                             </a>
                         </li>
                         <li class="list-group-item my_font">
                             <a href="${path}/admin/disAgree">
-                                <i class="fa fa-sitemap fa-fw"></i> 不同意领养列表
+                                <i class="fa fa-sitemap fa-fw"></i> 不同意购买列表
                             </a>
                         </li>
                     </ul>

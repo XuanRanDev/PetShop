@@ -35,7 +35,7 @@
                         <a href="${path}/user/about">宠物知识</a>
                     </li>
                     <li>
-                        <a href="${path}/user/service">领养中心</a>
+                        <a href="${path}/user/service">购买中心</a>
                     </li>
                     <li>
                         <a href="${path}/user/teamBlog">团队博客</a>
@@ -184,8 +184,8 @@
                                 </label>
                                 <div class="col-sm-4">
                                     <select class="form-control" id="new_state" name="state">
-                                        <option value="0">有领养经历</option>
-                                        <option value="1">无领养经历</option>
+                                        <option value="0">有购买经历</option>
+                                        <option value="1">无购买经历</option>
                                     </select>
                                 </div>
                             </div>
@@ -279,8 +279,8 @@
                         </label>
                         <div class="col-sm-4">
                             <select class="form-control" id="edit_state" name="state" value="${user.state}">
-                                <option value="0">有领养经历</option>
-                                <option value="1">无领养经历</option>
+                                <option value="0">有购买经历</option>
+                                <option value="1">无购买经历</option>
                             </select>
                         </div>
                     </div>

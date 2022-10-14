@@ -31,7 +31,7 @@
 <body>
 <div class="myDiv">
     <div>
-        <h2>待领养的动物</h2>
+        <h2>待购买的动物</h2>
         <center>
             <div id="demo1" class="slideBox">
                 <ul class="items">
@@ -83,7 +83,7 @@
             <div class="animal_me3"><img src="/static/images/adopt/p11.jpg"></div>
         </div>
         <div class="my_btn">
-            <button class="btn btn-primary btn-lg" id="pet_adopt_modal_btn">想要领养</button>
+            <button class="btn btn-primary btn-lg" id="pet_adopt_modal_btn">想要购买</button>
             <button class="btn btn-primary btn-lg" id="tianchuan_btn"
                     style="float: right;position: relative;left: 150px;bottom: 45px">返回中心
             </button>

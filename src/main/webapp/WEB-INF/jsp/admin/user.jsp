@@ -11,7 +11,7 @@
 <html><head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="Content-Type" content="multipart/form-data; charset=utf-8" />
-    <title>宠物领养管理后台</title>
+    <title>宠物购买管理后台</title>
     <!-- 引入css样式文件 -->
     <!-- Bootstrap Core CSS -->
     <link href="${path}/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -91,7 +91,7 @@
                         </li>
                         <li class="list-group-item my_font">
                             <a href="${path}/admin/adopt">
-                                <i class="fa fa-sitemap fa-fw"></i> 领养管理
+                                <i class="fa fa-sitemap fa-fw"></i> 购买管理
                             </a>
                         </li>
                         <li class="list-group-item my_font">
@@ -111,12 +111,12 @@
                         </li>
                         <li class="list-group-item my_font">
                             <a href="${path}/admin/agree">
-                                <i class="fa fa-sitemap fa-fw"></i> 同意领养列表
+                                <i class="fa fa-sitemap fa-fw"></i> 同意购买列表
                             </a>
                         </li>
                         <li class="list-group-item my_font">
                             <a href="${path}/admin/disAgree">
-                                <i class="fa fa-sitemap fa-fw"></i> 不同意领养列表
+                                <i class="fa fa-sitemap fa-fw"></i> 不同意购买列表
                             </a>
                         </li>
                     </ul>
@@ -164,9 +164,9 @@
                             <th>性别</th>
                             <th>年龄</th>
                             <th>电话</th>
-                            <th>地址</th>
-                            <th>有无领养</th>
-                            <th>操作</th>
+                                <th>地址</th>
+                                <th>有无购买</th>
+                                <th>操作</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -260,8 +260,8 @@
                         </label>
                         <div class="col-sm-4">
                             <select class="form-control" id="new_state" name="state">
-                                <option value="0">有领养经历</option>
-                                <option value="1">无领养经历</option>
+                                <option value="0">有购买经历</option>
+                                <option value="1">无购买经历</option>
                             </select>
                         </div>
                     </div>
@@ -338,8 +338,8 @@
                         </label>
                         <div class="col-sm-4">
                             <select class="form-control" id="edit_state" value="${user.state}" name="state">
-                                <option value="0">有领养经历</option>
-                                <option value="1">无领养经历</option>
+                                <option value="0">有购买经历</option>
+                                <option value="1">无购买经历</option>
                             </select>
                         </div>
                     </div>
@@ -434,10 +434,10 @@
             var telephoneTd=$("<td></td>").append(user.telephone);
             var addressTd=$("<td></td>").append(user.address);
             var stateTd=null;
-            if(user.state==0){
-                stateTd=$("<td></td>").append("没有领养经历");
-            }else{
-                stateTd=$("<td></td>").append("有领养经历");
+            if (user.state == 0) {
+                stateTd = $("<td></td>").append("没有购买经历");
+            } else {
+                stateTd = $("<td></td>").append("有购买经历");
             }
 
             var editBtn = $("<button></button>").addClass("btn btn-primary btn-sm edit_btn")

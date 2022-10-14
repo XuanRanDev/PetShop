@@ -28,7 +28,7 @@
             <form action="${path}/admin/dologin" method="post">
                 <div class="panel loginbox">
                     <div class="text-center margin-big padding-big-top">
-                        <h1>欢迎使用宠物领养管理系统</h1>
+                        <h1>欢迎使用宠物购买管理系统</h1>
                     </div>
                     ${msg}
                     <div class="panel-body"style="padding:30px; padding-bottom:10px; padding-top:10px;">

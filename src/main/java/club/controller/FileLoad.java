@@ -7,10 +7,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.UUID;
 
-/**
- * @author Mr Wu
- * @create: 2019-08-25 19:09
- */
 @Controller
 public class FileLoad {
     public static String uploadAdminPic(MultipartFile file) {

@@ -9,7 +9,7 @@
 <c:set var="path" value="${pageContext.request.contextPath}"></c:set>
 <!DOCTYPE html>
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>宠物领养管理后台</title>
+    <title>宠物购买管理后台</title>
     <!-- 引入css样式文件 -->
     <!-- Bootstrap Core CSS -->
     <link href="${path}/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -89,7 +89,7 @@
                         </li>
                         <li class="list-group-item my_font">
                             <a href="${path}/admin/adopt">
-                                <i class="fa fa-sitemap fa-fw"></i> 领养管理
+                                <i class="fa fa-sitemap fa-fw"></i> 购买管理
                             </a>
                         </li>
                         <li class="list-group-item my_font">
@@ -109,12 +109,12 @@
                         </li>
                         <li class="list-group-item my_font">
                             <a href="${path}/admin/agree">
-                                <i class="fa fa-sitemap fa-fw"></i> 同意领养列表
+                                <i class="fa fa-sitemap fa-fw"></i> 同意购买列表
                             </a>
                         </li>
                         <li class="list-group-item my_font">
                             <a href="${path}/admin/disAgree">
-                                <i class="fa fa-sitemap fa-fw"></i> 不同意领养列表
+                                <i class="fa fa-sitemap fa-fw"></i> 不同意购买列表
                             </a>
                         </li>
                     </ul>
@@ -123,11 +123,11 @@
         </div><!-- 左侧显示列表部分 end-->
 
     </nav>
-    <!-- 领养表列表查询部分  start-->
+    <!-- 购买表列表查询部分  start-->
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">猫狗领养申请的审核</h1>
+                <h1 class="page-header">猫狗购买申请的审核</h1>
             </div>
             <!-- /.col-lg-12 -->
         </div>
@@ -137,7 +137,7 @@
             <div class="panel-body">
                 <form class="form-inline" method="get" action="">
                     <div class="form-group">
-                        <label for="findByAdoptTime">领养的时间</label>
+                        <label for="findByAdoptTime">购买的时间</label>
                         <input type="date" class="form-control" id="findByAdoptTime" value="" name="adoptTime">
                     </div>
                     <button type="button" class="btn btn-primary" id="adopt_find_modal_btn">查询</button>

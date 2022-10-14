@@ -9,7 +9,7 @@
 <c:set var="path" value="${pageContext.request.contextPath}"></c:set>
 <!DOCTYPE html>
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>宠物领养管理后台</title>
+    <title>宠物购买管理后台</title>
     <!-- 引入css样式文件 -->
     <!-- Bootstrap Core CSS -->
     <link href="${path}/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -89,7 +89,7 @@
                         </li>
                         <li class="list-group-item my_font">
                             <a href="${path}/admin/adopt">
-                                <i class="fa fa-sitemap fa-fw"></i> 领养管理
+                                <i class="fa fa-sitemap fa-fw"></i> 购买管理
                             </a>
                         </li>
                         <li class="list-group-item my_font">
@@ -109,12 +109,12 @@
                         </li>
                         <li class="list-group-item my_font">
                             <a href="${path}/admin/agree">
-                                <i class="fa fa-sitemap fa-fw"></i> 同意领养列表
+                                <i class="fa fa-sitemap fa-fw"></i> 同意购买列表
                             </a>
                         </li>
                         <li class="list-group-item my_font">
                             <a href="${path}/admin/disAgree">
-                                <i class="fa fa-sitemap fa-fw"></i> 不同意领养列表
+                                <i class="fa fa-sitemap fa-fw"></i> 不同意购买列表
                             </a>
                         </li>
                     </ul>
@@ -123,7 +123,7 @@
         </div><!-- 左侧显示列表部分 end-->
 
     </nav>
-    <!-- 领养表列表查询部分  start-->
+    <!-- 购买表列表查询部分  start-->
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
@@ -147,7 +147,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="panel panel-default">
-                    <div class="panel-heading">领养信息列表</div>
+                    <div class="panel-heading">购买信息列表</div>
                     <!-- /.panel-heading -->
                     <table class="table table-bordered table-striped" id="adopt_table">
                         <thead>
@@ -159,7 +159,7 @@
                             <th>编号</th>
                             <th>用户名称</th>
                             <th>宠物名字</th>
-                            <th>领养时间</th>
+                            <th>购买时间</th>
                             <th>状态</th>
 
                         </tr>

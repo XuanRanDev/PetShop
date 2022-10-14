@@ -1,16 +1,18 @@
-<!DOCTYPE html> 
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
-	<title>宠物领养管理后台</title>
-	<!-- 引入css样式文件 -->
-	<!-- Bootstrap Core CSS -->
-	<link href="../../js/houtai/css/bootstrap.min.css" rel="stylesheet">
-	<!-- MetisMenu CSS -->
-	<link href="../../js/houtai/css/metisMenu.min.css" rel="stylesheet">
-	<!-- DataTables CSS -->
-	<link href="../../js/houtai/css/dataTables.bootstrap.css" rel="stylesheet">
-	<!-- Custom CSS -->
-	<link href="../../js/houtai/css/sb-admin-2.css" rel="stylesheet">
-	<!-- Custom Fonts -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+        <title>宠物购买管理后台</title>
+        <!-- 引入css样式文件 -->
+        <!-- Bootstrap Core CSS -->
+        <link href="../../js/houtai/css/bootstrap.min.css" rel="stylesheet">
+        <!-- MetisMenu CSS -->
+        <link href="../../js/houtai/css/metisMenu.min.css" rel="stylesheet">
+        <!-- DataTables CSS -->
+        <link href="../../js/houtai/css/dataTables.bootstrap.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="../../js/houtai/css/sb-admin-2.css" rel="stylesheet">
+        <!-- Custom Fonts -->
 	<link href="../../js/houtai/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href="../../js/houtai/css/boot-crm.css" rel="stylesheet" type="text/css">
     <style>
@@ -31,22 +33,22 @@
 		<!-- 消息通知 end -->
 		<!-- 用户信息和系统设置 start -->
 		<li class="dropdown">
-			<a class="dropdown-toggle" data-toggle="dropdown" href="crmclass/list.action#"> 
-				<i class="fa fa-user fa-fw"></i>
-				<i class="fa fa-caret-down"></i>
-			</a>
+            <a class="dropdown-toggle" data-toggle="dropdown" href="crmclass/list.action#">
+                <i class="fa fa-user fa-fw"></i>
+                <i class="fa fa-caret-down"></i>
+            </a>
 			<ul class="dropdown-menu dropdown-user ">
-				<li><a href="crmclass/list.action#"><i class="fa fa-user fa-fw"></i>
-				               用户：</a>
-				</li>
-				<li><a href="crmclass/list.action#"><i class="fa fa-gear fa-fw"></i> 系统设置</a></li>
-				<li class="divider"></li>
-				<li>
-					<a href="logout.action">
-					<i class="fa fa-sign-out fa-fw"></i>退出登录
-					</a>
-				</li>
-			</ul> 
+                <li><a href="crmclass/list.action#"><i class="fa fa-user fa-fw"></i>
+                    用户：</a>
+                </li>
+                <li><a href="crmclass/list.action#"><i class="fa fa-gear fa-fw"></i> 系统设置</a></li>
+                <li class="divider"></li>
+                <li>
+                    <a href="logout.action">
+                        <i class="fa fa-sign-out fa-fw"></i>退出登录
+                    </a>
+                </li>
+            </ul>
 		</li>
 		<!-- 用户信息和系统设置结束 -->
 	</ul> <!-- 左侧显示列表部分 start-->
@@ -76,9 +78,9 @@
 						  </a>
 					  </li>
 					  <li class="list-group-item my_font">
-						  <a href="">
-							  <i class="fa fa-sitemap fa-fw"></i> 领养管理
-						  </a>
+                          <a href="">
+                              <i class="fa fa-sitemap fa-fw"></i> 购买管理
+                          </a>
 					  </li>
 					  <li class="list-group-item my_font">
 						  <a href="">
@@ -123,31 +125,33 @@
 							<tr>
 								<th>编号</th>
 								<th>班级名称</th>
-								<th>开授课程</th> 
+                                <th>开授课程</th>
 								<th>开班时间</th>
 								<th>毕业时间</th>
 								<th>状态</th>
 								<th>学生总数</th>
 								<th>升学数</th>
 								<th>留班数</th>
-								<th>操作</th> 
+                                <th>操作</th>
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
-									<td>2</td>
-									<td>2期JavaEE</td> 
-									<td>Java基础</td> 
-									<td>2015-04-28 00:00:00.0</td>
-		 							<td>2016-01-01 15:02:02.0</td>
-									<td>已开课</td>
-									<td>67</td>
-									<td>0</td>
-									<td>0</td>
-								<td>
-										<a href="crmclass/list.action#" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#editUsers" onclick="editcrmclass(2)">修改</a>
-										<a href="crmclass/list.action#" class="btn btn-danger btn-xs" onclick="deletecrmclass(2)">删除</a>
-									</td>
+                        <tr>
+                            <td>2</td>
+                            <td>2期JavaEE</td>
+                            <td>Java基础</td>
+                            <td>2015-04-28 00:00:00.0</td>
+                            <td>2016-01-01 15:02:02.0</td>
+                            <td>已开课</td>
+                            <td>67</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>
+                                <a href="crmclass/list.action#" class="btn btn-primary btn-xs" data-toggle="modal"
+                                   data-target="#editUsers" onclick="editcrmclass(2)">修改</a>
+                                <a href="crmclass/list.action#" class="btn btn-danger btn-xs"
+                                   onclick="deletecrmclass(2)">删除</a>
+                            </td>
 								</tr>
 
 
@@ -233,10 +237,10 @@
 							经历
 						</label>
 						<div class="col-sm-4">
-							<select class="form-control" id="new_state" name="state">
-								<option value="0">有领养经历</option>
-								<option value="1">无领养经历</option>
-							</select>
+                            <select class="form-control" id="new_state" name="state">
+                                <option value="0">有购买经历</option>
+                                <option value="1">无购买经历</option>
+                            </select>
 						</div>
 					</div>
 				</form>
@@ -311,10 +315,10 @@
 							经历
 						</label>
 						<div class="col-sm-4">
-							<select class="form-control" id="edit_state" name="state">
-								<option value="0">有领养经历</option>
-								<option value="1">无领养经历</option>
-							</select>
+                            <select class="form-control" id="edit_state" name="state">
+                                <option value="0">有购买经历</option>
+                                <option value="1">无购买经历</option>
+                            </select>
 						</div>
 					</div>
 				</form>
@@ -340,13 +344,13 @@
 <script src="../../js/houtai/js/sb-admin-2.js"></script>
 <!-- 编写js代码 -->
 <script type="text/javascript">
-$(function(){
-    $(".panel-heading").click(function(e){
-        /*切换折叠指示图标*/
-        $(this).find("span").toggleClass("fa-chevron-down");
-        $(this).find("span").toggleClass("fa-chevron-up");
+    $(function () {
+        $(".panel-heading").click(function (e) {
+            /*切换折叠指示图标*/
+            $(this).find("span").toggleClass("fa-chevron-down");
+            $(this).find("span").toggleClass("fa-chevron-up");
+        });
     });
-}); 
 //清空新建班级窗口中的数据
 	function clearCrmclass() {
 	    $("#new_userName").val("");

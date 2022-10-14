@@ -117,11 +117,11 @@
                                value="${user.address}"/>
                     </div>
                     <div class="field-box">
-                        <label>有无领养经历:</label>
+                        <label>有无购买经历:</label>
                         <div class="ui-select">
                             <select id="edit_state" name="state" value="${user.state}">
-                                <option value="0">有领养经历</option>
-                                <option value="1">无领养经历</option>
+                                <option value="0">有购买经历</option>
+                                <option value="1">无购买经历</option>
                             </select>
                         </div>
                     </div>

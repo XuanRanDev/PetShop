@@ -12,7 +12,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>领养中心</title>
+    <title>购买中心</title>
     <!-- Meta tag Keywords -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
@@ -35,21 +35,21 @@
 </head>
 <body>
 <jsp:include page="navigation.jsp"></jsp:include>
-<!-- services -->
+    <!-- services -->
 
-<div class="services" id="services">
-    <div class="container">
-        <h3 class="agile-title">领养中心</h3>
-        <div class="w3_agile_services_grids">
+    <div class="services" id="services">
+        <div class="container">
+            <h3 class="agile-title">购买中心</h3>
+            <div class="w3_agile_services_grids">
 
+            </div>
         </div>
-    </div>
 
-    <div class="w3l-img-side">
-        <img src="/static/images/animal/cat.jpg" alt="" />
-    </div>
-    <div class="w3l-img-side w3l-img-side2">
-        <img src="/static/images/animal/dog.jpg" alt="" />
+        <div class="w3l-img-side">
+            <img src="/static/images/animal/cat.jpg" alt=""/>
+        </div>
+        <div class="w3l-img-side w3l-img-side2">
+            <img src="/static/images/animal/dog.jpg" alt=""/>
     </div>
 </div>
 <div class="row">

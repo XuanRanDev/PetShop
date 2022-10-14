@@ -184,16 +184,16 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS `pet`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `pet` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `petName` varchar(20) NOT NULL,
-  `petType` varchar(20) NOT NULL COMMENT '宠物类型',
-  `sex` varchar(3) NOT NULL COMMENT '性别',
-  `birthday` date NOT NULL,
-  `pic` varchar(100) NOT NULL COMMENT '头像',
-  `state` int(11) NOT NULL DEFAULT '1' COMMENT '现在的状态 0 没有申请领养 1 被申请领养 2 已经被领养',
-  `remark` varchar(100) DEFAULT NULL COMMENT '备注',
-  PRIMARY KEY (`id`)
+CREATE TABLE `pet`(
+                      `id`       int(11)      NOT NULL AUTO_INCREMENT,
+                      `petName`  varchar(20)  NOT NULL,
+                      `petType`  varchar(20)  NOT NULL COMMENT '宠物类型',
+                      `sex`      varchar(3)   NOT NULL COMMENT '性别',
+                      `birthday` date         NOT NULL,
+                      `pic`      varchar(100) NOT NULL COMMENT '头像',
+                      `state`    int(11)      NOT NULL DEFAULT '1' COMMENT '现在的状态 0 没有申请购买 1 被申请购买 2 已经被购买',
+                      `remark`   varchar(100)          DEFAULT NULL COMMENT '备注',
+                      PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -214,17 +214,18 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS `adoptAnimal`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `adoptAnimal` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `userId` int(11) NOT NULL COMMENT '用户表id的外键',
-  `petId` int(11) NOT NULL COMMENT '宠物表id的外键',
-  `adoptTime` date NOT NULL,
-  `state` int(11) DEFAULT '1' COMMENT '是否同意被领养 0 是不同意 1 还在审核 2 是同意',
-  PRIMARY KEY (`id`),
-  KEY `fk3` (`userId`),
-  KEY `fk4` (`petId`),
-  CONSTRAINT `fk3` FOREIGN KEY (`userId`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `fk4` FOREIGN KEY (`petId`) REFERENCES `pet` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+CREATE TABLE `adoptAnimal`
+(
+    `id`        int(11) NOT NULL AUTO_INCREMENT,
+    `userId`    int(11) NOT NULL COMMENT '用户表id的外键',
+    `petId`     int(11) NOT NULL COMMENT '宠物表id的外键',
+    `adoptTime` date    NOT NULL,
+    `state`     int(11) DEFAULT '1' COMMENT '是否同意被购买 0 是不同意 1 还在审核 2 是同意',
+    PRIMARY KEY (`id`),
+    KEY `fk3` (`userId`),
+    KEY `fk4` (`petId`),
+    CONSTRAINT `fk3` FOREIGN KEY (`userId`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+    CONSTRAINT `fk4` FOREIGN KEY (`petId`) REFERENCES `pet` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -267,18 +268,19 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS `user`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `user` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `userName` varchar(20) NOT NULL,
-  `password` varchar(30) NOT NULL,
-  `sex` varchar(2) DEFAULT NULL COMMENT '性别',
-  `age` int(11) DEFAULT NULL COMMENT '年龄',
-  `telephone` varchar(20) DEFAULT NULL COMMENT '电话',
-  `Email` varchar(30) DEFAULT NULL COMMENT 'Email',
-  `address` varchar(50) DEFAULT NULL COMMENT '地址',
-  `pic` varchar(100) DEFAULT 't0.jpg',
-  `state` int(11) DEFAULT '0' COMMENT '有无领养宠物的经历 0 是没有 1 是由',
-  PRIMARY KEY (`id`)
+CREATE TABLE `user`
+(
+    `id`        int(11)     NOT NULL AUTO_INCREMENT,
+    `userName`  varchar(20) NOT NULL,
+    `password`  varchar(30) NOT NULL,
+    `sex`       varchar(2)   DEFAULT NULL COMMENT '性别',
+    `age`       int(11)      DEFAULT NULL COMMENT '年龄',
+    `telephone` varchar(20)  DEFAULT NULL COMMENT '电话',
+    `Email`     varchar(30)  DEFAULT NULL COMMENT 'Email',
+    `address`   varchar(50)  DEFAULT NULL COMMENT '地址',
+    `pic`       varchar(100) DEFAULT 't0.jpg',
+    `state`     int(11)      DEFAULT '0' COMMENT '有无购买宠物的经历 0 是没有 1 是由',
+    PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
