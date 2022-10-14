@@ -9,10 +9,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-/**
- * @author Mr Wu
- * @create: 2019-08-20 14:23
- */
+
 @Data
 public class Pet {
     private Integer id;

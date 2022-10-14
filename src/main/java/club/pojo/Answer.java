@@ -4,12 +4,10 @@ import com.baomidou.mybatisplus.annotations.TableField;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
+
 import java.util.Date;
 
-/**
- * @author Mr Wu
- * @create: 2019-08-29 13:57
- */
+
 @Data
 public class Answer {
     private Integer id;
