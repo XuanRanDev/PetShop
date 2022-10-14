@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: 24255
-  Date: 2019/8/22
-  Time: 14:34
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <c:set var="path" value="${pageContext.request.contextPath}"></c:set>
 <!DOCTYPE html>
@@ -28,7 +22,7 @@
             <form action="${path}/admin/dologin" method="post">
                 <div class="panel loginbox">
                     <div class="text-center margin-big padding-big-top">
-                        <h1>欢迎使用宠物领养管理系统</h1>
+                        <h1>欢迎使用宠物购买管理系统</h1>
                     </div>
                     ${msg}
                     <div class="panel-body"style="padding:30px; padding-bottom:10px; padding-top:10px;">

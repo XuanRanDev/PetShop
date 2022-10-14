@@ -3,10 +3,7 @@ package club.util;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @author Mr Wu
- * @create: 2019-08-20 15:12
- */
+
 public class Message {
 
     /**

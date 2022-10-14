@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: 24255
-  Date: 2019/9/3
-  Time: 15:11
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <c:set var="path" value="${pageContext.request.contextPath}"></c:set>
 <!DOCTYPE html>
@@ -117,11 +111,11 @@
                                value="${user.address}"/>
                     </div>
                     <div class="field-box">
-                        <label>有无领养经历:</label>
+                        <label>有无购买经历:</label>
                         <div class="ui-select">
                             <select id="edit_state" name="state" value="${user.state}">
-                                <option value="0">有领养经历</option>
-                                <option value="1">无领养经历</option>
+                                <option value="0">有购买经历</option>
+                                <option value="1">无购买经历</option>
                             </select>
                         </div>
                     </div>

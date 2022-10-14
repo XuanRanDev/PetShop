@@ -1,15 +1,9 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: 24255
-  Date: 2019/8/22
-  Time: 23:49
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <c:set var="path" value="${pageContext.request.contextPath}"></c:set>
 <!DOCTYPE html>
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>宠物领养管理后台</title>
+    <title>宠物购买管理后台</title>
     <!-- 引入css样式文件 -->
     <!-- Bootstrap Core CSS -->
     <link href="${path}/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -89,7 +83,7 @@
                         </li>
                         <li class="list-group-item my_font">
                             <a href="${path}/admin/adopt">
-                                <i class="fa fa-sitemap fa-fw"></i> 领养管理
+                                <i class="fa fa-sitemap fa-fw"></i> 购买管理
                             </a>
                         </li>
                         <li class="list-group-item my_font">
@@ -97,24 +91,15 @@
                                 <i class="fa fa-sitemap fa-fw"></i> 评论管理
                             </a>
                         </li>
-                        <li class="list-group-item my_font">
-                            <a href="${path}/admin/blog">
-                                <i class="fa fa-sitemap fa-fw"></i> 团队活动管理
-                            </a>
-                        </li>
-                        <li class="list-group-item my_font">
-                            <a href="${path}/admin/apply">
-                                <i class="fa fa-sitemap fa-fw"></i> 志愿者的申请
-                            </a>
-                        </li>
+
                         <li class="list-group-item my_font">
                             <a href="${path}/admin/agree">
-                                <i class="fa fa-sitemap fa-fw"></i> 同意领养列表
+                                <i class="fa fa-sitemap fa-fw"></i> 同意购买列表
                             </a>
                         </li>
                         <li class="list-group-item my_font">
                             <a href="${path}/admin/disAgree">
-                                <i class="fa fa-sitemap fa-fw"></i> 不同意领养列表
+                                <i class="fa fa-sitemap fa-fw"></i> 不同意购买列表
                             </a>
                         </li>
                     </ul>

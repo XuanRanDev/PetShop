@@ -1,10 +1,5 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: 24255
-  Date: 2019/8/22
-  Time: 23:51
-  To change this template use File | Settings | File Templates.
---%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <c:set var="path" value="${pageContext.request.contextPath}"></c:set>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -12,7 +7,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>领养中心</title>
+    <title>购买中心</title>
     <!-- Meta tag Keywords -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
@@ -35,38 +30,38 @@
 </head>
 <body>
 <jsp:include page="navigation.jsp"></jsp:include>
-<!-- services -->
+    <!-- services -->
 
-<div class="services" id="services">
-    <div class="container">
-        <h3 class="agile-title">领养中心</h3>
-        <div class="w3_agile_services_grids">
+    <div class="services" id="services">
+        <div class="container">
+            <h3 class="agile-title">购买中心</h3>
+            <div class="w3_agile_services_grids">
 
+            </div>
+        </div>
+
+        <div class="w3l-img-side">
+            <img src="<c:url value="/static/images/animal/cat.jpg"/>" alt=""/>
+        </div>
+        <div class="w3l-img-side w3l-img-side2">
+            <img src="<c:url value="/static/images/animal/dog.jpg"/>" alt=""/>
         </div>
     </div>
-
-    <div class="w3l-img-side">
-        <img src="/static/images/animal/cat.jpg" alt="" />
+    <div class="row">
+        <!-- 分页条信息 -->
+        <div class="col-md-5" id="page_info_area"></div>
+        <div class="col-md-4 myPage" id="page_nav_area"></div>
     </div>
-    <div class="w3l-img-side w3l-img-side2">
-        <img src="/static/images/animal/dog.jpg" alt="" />
-    </div>
-</div>
-<div class="row">
-    <!-- 分页条信息 -->
-    <div class="col-md-5" id="page_info_area"></div>
-    <div class="col-md-4 myPage" id="page_nav_area"></div>
-</div>
 
 
-<!-- //services -->
+    <!-- //services -->
 <!-- js -->
 <script src="${path}/static/js/jquery-3.4.1.js"></script>
 <script src="${path}/static/bootstrap/js/bootstrap.js"></script>
 <!-- Necessary-JavaScript-File-For-Bootstrap -->
 <!-- //js -->
 
-<!-- start-smooth-scrolling 上去-->
+    <!-- start-smooth-scrolling 上去-->
 <script src="${path}/static/js/user/move-top.js"></script>
 <script src="${path}/static/js/user/easing.js"></script>
 <script>
@@ -82,7 +77,7 @@
 </script>
 <!-- //end-smooth-scrolling -->
 
-<!-- smooth-scrolling-of-move-up 这是service.html页面反到底层上去的功能 -->
+    <!-- smooth-scrolling-of-move-up 这是service.html页面反到底层上去的功能 -->
 <script>
     $(document).ready(function () {
         $().UItoTop({
@@ -100,6 +95,7 @@
     $(function(){
         to_page(1);
     });
+
     function to_page(pn){
         $.ajax({
             url:"${path}/pet/pets",

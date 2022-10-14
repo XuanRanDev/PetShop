@@ -6,10 +6,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 
-/**
- * @author Mr Wu
- * @create: 2019-09-05 09:59
- */
+
 @Data
 public class Apply {
     private Integer id;

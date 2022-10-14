@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>宠物领养管理后台</title>
+    <title>宠物购买管理后台</title>
     <!-- 引入css样式文件 -->
     <!-- Bootstrap Core CSS -->
     <link href="../../js/houtai/css/bootstrap.min.css" rel="stylesheet">
@@ -79,7 +79,7 @@
                         </li>
                         <li class="list-group-item my_font">
                             <a href="">
-                                <i class="fa fa-sitemap fa-fw"></i> 领养管理
+                                <i class="fa fa-sitemap fa-fw"></i> 购买管理
                             </a>
                         </li>
                         <li class="list-group-item my_font">
@@ -131,7 +131,7 @@
                             <th>性别</th>
                             <th>生日</th>
                             <th>照片</th>
-                            <th>领养状态</th>
+                            <th>购买状态</th>
                             <th>操作</th>
                         </tr>
                         </thead>
@@ -143,7 +143,7 @@
                             <td>公</td>
                             <td>2019年7月2日</td>
                             <td>ab.png</td>
-                            <td>未被领养</td>
+                            <td>未被购买</td>
                             <td>
                                 <a href="crmclass/list.action#" class="btn btn-primary btn-xs" data-toggle="modal"
                                    data-target="#editPet" onclick="editPet(1)">修改</a>
@@ -239,12 +239,12 @@
                     </div>
                     <div class="form-group">
                         <label for="new_state" class="col-sm-2 control-label">
-                            领养状态
+                            购买状态
                         </label>
                         <div class="col-sm-4">
                             <select class="form-control" id="new_state" name="state">
-                                <option value="0">未被领养</option>
-                                <option value="1">被领养</option>
+                                <option value="0">未被购买</option>
+                                <option value="1">被购买</option>
                             </select>
                         </div>
 
@@ -332,12 +332,12 @@
                     </div>
                     <div class="form-group">
                         <label for="edit_state" class="col-sm-2 control-label">
-                            领养状态
+                            购买状态
                         </label>
                         <div class="col-sm-4">
                             <select class="form-control" id="edit_state" name="state">
-                                <option value="0">未被领养</option>
-                                <option value="1">被领养</option>
+                                <option value="0">未被购买</option>
+                                <option value="1">被购买</option>
                             </select>
                         </div>
 

@@ -1,12 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<%--
-  Created by IntelliJ IDEA.
-  User: 24255
-  Date: 2019/8/22
-  Time: 23:51
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <c:set var="path" value="${pageContext.request.contextPath}"></c:set>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -31,7 +25,7 @@
 <body>
 <div class="myDiv">
     <div>
-        <h2>待领养的动物</h2>
+        <h2>待购买的动物</h2>
         <center>
             <div id="demo1" class="slideBox">
                 <ul class="items">
@@ -43,18 +37,18 @@
                 </ul>
             </div>
             <div class="name">
-                <img src="/static/images/adopt/p1.jpg" height="50px" width="50px">
+                <img src="<c:url value="/static/images/adopt/p1.jpg"/>" height="50px" width="50px">
                 <span>我叫 ${pet.petName}</span>
             </div>
         </center>
         <div class="animal">
             <div class="group">
                 <div class="animalX1">
-                    <img src="/static/images/adopt/p2.jpg"><span>编号</span><br>
+                    <img src="<c:url value="/static/images/adopt/p2.jpg"/>"><span>编号</span><br>
                     <p>${pet.id}</p>
                 </div>
                 <div class="animalX2">
-                    <img src="/static/images/adopt/p3.jpg"><span>生日</span><br>
+                    <img src="<c:url value="/static/images/adopt/p3.jpg"/>" alt=""><span>生日</span><br>
                     <p>
                         <fmt:formatDate pattern="yyyy-MM-dd" value="${pet.birthday}"/>
                     </p>
@@ -62,28 +56,28 @@
             </div>
             <div class="group">
                 <div class="animalX3">
-                    <img src="/static/images/adopt/p4.jpg"><span>品种</span><br>
+                    <img src="<c:url value="/static/images/adopt/p4.jpg"/>"><span>品种</span><br>
                     <p>${pet.petType}</p>
                 </div>
                 <div class="animalX4">
-                    <img src="/static/images/adopt/p5.jpg"><span>性别</span><br>
+                    <img src="<c:url value="/static/images/adopt/p5.jpg"/>"><span>性别</span><br>
                     <p>${pet.sex}</p>
                 </div>
             </div>
         </div>
         <div class="animal_me">
             <div class="animal_me1">
-                <img src="/static/images/adopt/p6.jpg">
-                <img src="/static/images/adopt/p7.jpg">
-                <img src="/static/images/adopt/p8.jpg">
-                <img src="/static/images/adopt/p9.jpg">
-                <img src="/static/images/adopt/p10.jpg">
+                <img src="<c:url value="/static/images/adopt/p6.jpg"/>">
+                <img src="<c:url value="/static/images/adopt/p7.jpg"/>">
+                <img src="<c:url value="/static/images/adopt/p8.jpg"/>">
+                <img src="<c:url value="/static/images/adopt/p9.jpg"/>">
+                <img src="<c:url value="/static/images/adopt/p10.jpg"/>">
             </div>
             <div class="animal_me2"><p>大家好，我是${pet.petName}。${pet.remark}。你能带我回家吗？</p></div>
-            <div class="animal_me3"><img src="/static/images/adopt/p11.jpg"></div>
+            <div class="animal_me3"><img src="<c:url value="/static/images/adopt/p11.jpg"/>"></div>
         </div>
         <div class="my_btn">
-            <button class="btn btn-primary btn-lg" id="pet_adopt_modal_btn">想要领养</button>
+            <button class="btn btn-primary btn-lg" id="pet_adopt_modal_btn">想要购买</button>
             <button class="btn btn-primary btn-lg" id="tianchuan_btn"
                     style="float: right;position: relative;left: 150px;bottom: 45px">返回中心
             </button>

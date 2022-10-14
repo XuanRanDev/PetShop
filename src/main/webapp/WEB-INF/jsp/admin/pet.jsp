@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: 24255
-  Date: 2019/8/22
-  Time: 23:49
-  To change this template use /images | Settings | /images Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <c:set var="path" value="${pageContext.request.contextPath}"></c:set>
 <!DOCTYPE html>
@@ -12,7 +6,7 @@
 <head>
     <meta content="text/html; charset=UTF-8">
     <meta http-equiv="Content-Type" content="multipart/form-data; charset=utf-8"/>
-    <title>宠物领养管理后台</title>
+    <title>宠物购买管理后台</title>
     <!-- 引入css样式文件 -->
     <!-- Bootstrap Core CSS -->
     <link href="${path}/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -115,7 +109,7 @@
                         </li>
                         <li class="list-group-item my_font">
                             <a href="${path}/admin/adopt">
-                                <i class="fa fa-sitemap fa-fw"></i> 领养管理
+                                <i class="fa fa-sitemap fa-fw"></i> 购买管理
                             </a>
                         </li>
                         <li class="list-group-item my_font">
@@ -123,24 +117,15 @@
                                 <i class="fa fa-sitemap fa-fw"></i> 评论管理
                             </a>
                         </li>
-                        <li class="list-group-item my_font">
-                            <a href="${path}/admin/blog">
-                                <i class="fa fa-sitemap fa-fw"></i> 团队活动管理
-                            </a>
-                        </li>
-                        <li class="list-group-item my_font">
-                            <a href="${path}/admin/apply">
-                                <i class="fa fa-sitemap fa-fw"></i> 志愿者的申请
-                            </a>
-                        </li>
+
                         <li class="list-group-item my_font">
                             <a href="${path}/admin/agree">
-                                <i class="fa fa-sitemap fa-fw"></i> 同意领养列表
+                                <i class="fa fa-sitemap fa-fw"></i> 同意购买列表
                             </a>
                         </li>
                         <li class="list-group-item my_font">
                             <a href="${path}/admin/disAgree">
-                                <i class="fa fa-sitemap fa-fw"></i> 不同意领养列表
+                                <i class="fa fa-sitemap fa-fw"></i> 不同意购买列表
                             </a>
                         </li>
                     </ul>
@@ -188,9 +173,9 @@
                             <th>种类</th>
                             <th>性别</th>
                             <th>生日</th>
-                            <th>照片</th>
-                            <th>领养状态</th>
-                            <th>操作</th>
+                                <th>照片</th>
+                                <th>购买状态</th>
+                                <th>操作</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -260,13 +245,13 @@
                     </div>
                     <div class="form-group">
                         <label for="new_state" class="col-sm-2 control-label">
-                            领养状态
+                            购买状态
                         </label>
                         <div class="col-sm-4">
                             <select class="form-control" id="new_state" name="state">
-                                <option value="0">还未被申请领养</option>
-                                <option value="2">被领养</option>
-                                <option value="1">被申请领养</option>
+                                <option value="0">还未被申请购买</option>
+                                <option value="2">被购买</option>
+                                <option value="1">被申请购买</option>
                             </select>
                         </div>
                         <label for="new_pic" class="col-sm-2 control-label">
@@ -352,13 +337,13 @@
                             <input type="file" id="edit_pic" value="${pet.pic}" name="file">
                         </div>
                         <label for="edit_state" class="col-sm-2 control-label">
-                            领养状态
+                            购买状态
                         </label>
                         <div class="col-sm-4">
                             <select class="form-control" id="edit_state" value="${pet.state}" name="state">
-                                <option value="0">还未被申请领养</option>
-                                <option value="1">正在被申请领养</option>
-                                <option value="2">已经被人领养</option>
+                                <option value="0">还未被申请购买</option>
+                                <option value="1">正在被申请购买</option>
+                                <option value="2">已经被人购买</option>
                             </select>
                         </div>
                     </div>
@@ -460,11 +445,11 @@
             var picTd = $("<td></td>").append($("<img/>").addClass("mySize").attr("src", "/static/images/animal/" + spilt(pet.pic)));
             var stateTd = null;
             if (pet.state == 0) {
-                stateTd = $("<td></td>").append("还未被申请领养");
+                stateTd = $("<td></td>").append("还未被申请购买");
             } else if (pet.state == 1) {
-                stateTd = $("<td></td>").append("正在被申请领养");
+                stateTd = $("<td></td>").append("正在被申请购买");
             } else {
-                stateTd = $("<td></td>").append("已经被领养");
+                stateTd = $("<td></td>").append("已经被购买");
             }
 
             var editBtn = $("<button></button>").addClass("btn btn-primary btn-sm edit_btn")

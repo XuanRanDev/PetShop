@@ -1,11 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%--
-  Created by IntelliJ IDEA.
-  User: 24255
-  Date: 2019/8/24
-  Time: 23:07
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <c:set var="path" value="${pageContext.request.contextPath}"></c:set>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -35,13 +29,7 @@
                         <a href="${path}/user/about">宠物知识</a>
                     </li>
                     <li>
-                        <a href="${path}/user/service">领养中心</a>
-                    </li>
-                    <li>
-                        <a href="${path}/user/teamBlog">团队博客</a>
-                    </li>
-                    <li>
-                        <a href="${path}/user/team">团队展示</a>
+                        <a href="${path}/user/service">购买中心</a>
                     </li>
 
                     <!-- 判断是否登录 显示哪个内容 -->
@@ -184,8 +172,8 @@
                                 </label>
                                 <div class="col-sm-4">
                                     <select class="form-control" id="new_state" name="state">
-                                        <option value="0">有领养经历</option>
-                                        <option value="1">无领养经历</option>
+                                        <option value="0">有购买经历</option>
+                                        <option value="1">无购买经历</option>
                                     </select>
                                 </div>
                             </div>
@@ -279,8 +267,8 @@
                         </label>
                         <div class="col-sm-4">
                             <select class="form-control" id="edit_state" name="state" value="${user.state}">
-                                <option value="0">有领养经历</option>
-                                <option value="1">无领养经历</option>
+                                <option value="0">有购买经历</option>
+                                <option value="1">无购买经历</option>
                             </select>
                         </div>
                     </div>
