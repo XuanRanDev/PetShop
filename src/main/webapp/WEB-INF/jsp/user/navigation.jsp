@@ -43,7 +43,7 @@
                     %>
                     <c:if test="${sessionScope.isLogin}" var="flage" scope="session">
                         <li id="edit_logout">
-                            <div class="img"><img src="/static/images/user/${user.getPic()}" alt="" width="60px"
+                            <div class="img"><img src="<c:url value="/static/images/user/${user.getPic()}"/>" alt="" width="60px"
                                                   style="border-radius:50% " value="${user.getId()}"
                                                   id="user_edit_modal_btn"></div>
                         </li>

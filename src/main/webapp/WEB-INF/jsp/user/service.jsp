@@ -119,7 +119,9 @@
         $.each(pets,function(index,pet){
             var divTd=$("<div></div>").addClass("ih-item circle effect1 agile_services_grid");
             var headTd=$("<div></div>").addClass("spinner");
-            var imgTd=$("<div></div>").addClass("img").append($("<img/>").addClass("img-responsive").attr("src","/static/images/animal/"+spilt(pet.pic)).attr("pet-id",pet.id));
+            <%--src="<c:url value="/static/images/animal/dog.jpg"/>"--%>
+            var imgTd=$("<div></div>").addClass("img").append($("<img/>").addClass("img-responsive")
+                .attr("src","<c:url value="/static/images/animal/"/>"+spilt(pet.pic)).attr("pet-id",pet.id));
             // imgTd.attr("pet-id",pet.id);
             /*$(".img-responsive").attr("pet-id",pet.id);*/
             divTd.append(headTd);

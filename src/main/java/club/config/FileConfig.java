@@ -7,5 +7,5 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class FileConfig {
-    public static final String PROJECT_PATH = "E:\\IDEA_Project\\YYR";
+    public static final String PROJECT_PATH = "E:\\IDEA_Project\\YYR\\PetShop";
 }

@@ -19,7 +19,7 @@ public class FileLoad {
         String substring = fileName.substring(fileName.lastIndexOf("."));
         //上传文件
         try {
-            file.transferTo(new File(FileConfig.PROJECT_PATH + "/adopt/src/main/webapp/static/images/admin/" + picName + substring));
+            file.transferTo(new File(FileConfig.PROJECT_PATH + "/src/main/webapp/static/images/admin/" + picName + substring));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -35,7 +35,7 @@ public class FileLoad {
         String substring = fileName.substring(fileName.lastIndexOf("."));
         //上传文件
         try {
-            file.transferTo(new File(FileConfig.PROJECT_PATH + "/adopt/src/main/webapp/static/images/user/" + picName + substring));
+            file.transferTo(new File(FileConfig.PROJECT_PATH + "/src/main/webapp/static/images/user/" + picName + substring));
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -51,7 +51,7 @@ public class FileLoad {
         String substring = fileName.substring(fileName.lastIndexOf("."));
         //上传文件
         try {
-            file.transferTo(new File(FileConfig.PROJECT_PATH + "/adopt/src/main/webapp/static/images/animal/" + picName + substring));
+            file.transferTo(new File(FileConfig.PROJECT_PATH + "/src/main/webapp/static/images/animal/" + picName + substring));
         } catch (IOException e) {
             e.printStackTrace();
         }
